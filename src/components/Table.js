@@ -1,5 +1,7 @@
 const Table = ({ sat }) => {
 
+  
+
   return (
       <table>
        <thead>
@@ -18,7 +20,7 @@ const Table = ({ sat }) => {
               <td>{data.name}</td>
               <td>{data.type}</td>
               <td>{data.launchDate}</td>
-              <td>{sat.operational}</td>
+              <td>{data.operational ? "Active": "Inactive" }</td>
             </tr>
             )
           })};
